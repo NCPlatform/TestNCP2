@@ -20,8 +20,13 @@ const List = () => {
     }
 
     useEffect(()=>{
-        getList();
-    },[currentPage, getList]);
+        axios.get(`/user/getList?page=${currentPage}&searchKey=${searchKey}&searchValue=${searchValue}`)
+            .then(res=>{
+                setList(res.data.content);
+                setTotalPage(res.data.totalPages)
+            })
+            .catch(error => console.log(error))
+    },[currentPage,searchKey,searchValue]);
 
     const getList = () => {
         axios.get(`/user/getList?page=${currentPage}&searchKey=${searchKey}&searchValue=${searchValue}`)
