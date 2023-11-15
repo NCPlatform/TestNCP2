@@ -28,7 +28,7 @@ const UpdateForm = () => {
             })
             .catch(error => console.log(error))
 
-    },[userID]); 
+    },[userId]); 
 
     const {name, id, password} = userDTO;
 
