@@ -28,7 +28,7 @@ const UpdateForm = () => {
             })
             .catch(error => console.log(error))
 
-    },[]); 
+    },[userID]); 
 
     const {name, id, password} = userDTO;
 
@@ -106,7 +106,7 @@ const UpdateForm = () => {
                                 아이디
                             </th>
                             <td>
-                                <input type="text" name="id" value={userId} id="id" onChange={onInput} readOnly/>
+                                <input type="text" name="id" value={id} id="id" onChange={onInput} readOnly/>
                             </td>
                         </tr>
                         <tr>
@@ -129,8 +129,8 @@ const UpdateForm = () => {
                     </tbody>
                 </table>
             </form>
-            <Link to="/"><img style={{width: '100px'}} src="https://item.kakaocdn.net/do/07b822e434d42166cdf3123e30c9dcb4f43ad912ad8dd55b04db6a64cddaf76d" /></Link>
-            <Link to="/"><img style={{width: '100px'}} src={mainImg}/></Link>
+            <Link to="/"><img style={{width: '100px'}} src="https://item.kakaocdn.net/do/07b822e434d42166cdf3123e30c9dcb4f43ad912ad8dd55b04db6a64cddaf76d" alt="이미지"/></Link>
+            <Link to="/"><img style={{width: '100px'}} src={mainImg} alt="이미지"/></Link>
         </div>
     );
 };

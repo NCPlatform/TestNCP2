@@ -21,7 +21,7 @@ const List = () => {
 
     useEffect(()=>{
         getList();
-    },[currentPage]);
+    },[currentPage, getList]);
 
     const getList = () => {
         axios.get(`/user/getList?page=${currentPage}&searchKey=${searchKey}&searchValue=${searchValue}`)

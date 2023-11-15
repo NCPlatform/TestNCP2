@@ -141,8 +141,8 @@ const WriteForm = () => {
                     </tbody>
                 </table>
             </form>
-            <Link to="/"><img style={{width: '100px'}} src="https://item.kakaocdn.net/do/07b822e434d42166cdf3123e30c9dcb4f43ad912ad8dd55b04db6a64cddaf76d" /></Link>
-            <Link to="/"><img style={{width: '100px'}} src={mainImg}/></Link>
+            <Link to="/"><img style={{width: '100px'}} src="https://item.kakaocdn.net/do/07b822e434d42166cdf3123e30c9dcb4f43ad912ad8dd55b04db6a64cddaf76d" alt="이미지"/></Link>
+            <Link to="/"><img style={{width: '100px'}} src={mainImg} alt="이미지"/></Link>
         </div>
     );
 };
