@@ -1,6 +1,6 @@
 FROM openjdk:17
 
-ARG JAR_FILE=build/libs/JPAwithReact-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=build/libs/JPAwithReact-0.0.1-SNAPSHOT.war
 
 COPY ${JAR_FILE} app.jar
 
