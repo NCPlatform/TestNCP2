@@ -8,6 +8,7 @@ public class MainController {
 	
 	@GetMapping(value="/")
 	public String index() {
+		System.out.println("처음을 실행할것");
 		return "/index";
 	}
 }
